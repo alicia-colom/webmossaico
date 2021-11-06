@@ -1,0 +1,53 @@
+.hero {
+  width: 100vw;
+  height: calc(100vh - 101px);
+  background-image: url(../../../assets/images/foto-velas-home.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-clip: border-box;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: contrast(90%);
+  -webkit-filter: contrast(90%);
+  background-color: #747474;
+
+  @media all and (max-width: 650px) {
+    height: 350px;
+    padding-bottom: 10px;
+    background-position: center center;
+    -webkit-background-size: contains;
+    -moz-background-size: contains;
+    -o-background-size: contains;
+    background-size: contains;
+  }
+}
+
+.title {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #474747, 2.5px 2.5px 0px #d27919;
+  font-size: 1.5rem;
+  width: 100vw;
+  position: relative;
+  transform: translate(0, -400%);
+  z-index: 2;
+  @media all and (max-width: 768px) {
+    font-size: calc(14px + 2vw);
+  }
+  @media all and (max-width: 650px) {
+    transform: translate(0, -300%);
+  }
+  @media all and (max-width: 480px) {
+    padding: 3vw;
+    font-size: calc(14px + 1.5vw);
+    transform: translate(0, -200%);
+  }
+  @media all and (max-width: 334px) {
+    font-size: calc(14px + 1vw);
+  }
+  @media all and (max-width: 299px) {
+    font-size: calc(10px + 1.5vw);
+  }
+}

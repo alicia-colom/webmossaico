@@ -1,0 +1,33 @@
+.productCard {
+  
+  &__title {
+    font-family: "Manjari", sans-serif;
+    color: #22c3a3;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-block-end: 0;
+    text-transform: uppercase;
+    text-shadow: 1px 2px #188f77;
+  }
+
+  &__description {
+    max-width: 90%;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  &__img {
+    width: 9rem;
+    max-width: 100%;
+    height: 9rem;
+    object-fit: cover;
+    margin-bottom: 1.6rem;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      transform: rotate3d(1, 2, 3, 4deg);
+    }
+  }
+}

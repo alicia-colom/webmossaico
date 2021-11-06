@@ -1,0 +1,73 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #fefefe;
+  color: #474747;
+  line-height: 1.5rem;
+}
+
+.main {
+  &__container {
+    margin-bottom: -2.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.button {
+  width: fit-content;
+  margin: 2rem;
+  align-self: flex-end;
+  padding: 0.8rem 2.4rem 0.6rem 2.4rem;
+  background-color: #d27919;
+  color: #fefefe;
+  border-radius: 3px 15px;
+  font-family: "Manjari", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: normal;
+  &:hover {
+    background-color: #747474;
+    color: #fefefe;
+  }
+  @media all and (max-width: 900px) {
+    align-self: center;
+  }
+}
+.button.inverse {
+  background-color: #fefefe;
+  color: #474747;
+  &:hover {
+    background-color: #d27919;
+    color: #fefefe;
+  }
+}
+
+.fontMossaico {
+  font-family: "Manjari", sans-serif;
+  font-weight: bold;
+}
+
+.quote {
+  // z-index: 2;
+  position: relative;
+  padding: 2rem 0;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.quote:before {
+  content: "";
+  background: url(./assets/images/quote-left-64.png) no-repeat;
+  background-position: 12% -10%;
+  background-size: 100px;
+  position: absolute;top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
